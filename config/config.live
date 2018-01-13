@@ -1,0 +1,29 @@
+<?php
+#indicare un file accessibile in rete contenente i dati
+$indirizzo_file = "";
+
+//indicare rispettando la sintassi gli indirizzi ip ammessi o il range per troncamento (es. 193.206.206 sta per 193.206.206.*). Cancellare i valori che non servono.
+
+$ip_ammesso = array
+(
+1 =>"",
+2 => "",
+3 => "",
+);
+
+function searcharray($ip_ammesso,$richiedente) 
+{
+   foreach ($ip_ammesso as $k => $val) 
+	{
+       if ($ip_ammesso[$k] == substr($richiedente,0,strlen($ip_ammesso[$k]))) 
+		{
+           	return $k;
+       		}
+   	}
+   return null;
+   
+}
+		
+?>
+
+
