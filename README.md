@@ -12,13 +12,14 @@ La realizzazione - basata su _spaghetti coding_ - vuole semplicemente dare un'id
 Il file _config.live_ deve essere completato:
 * con *$indirizzo_file* (il file tsv contenente le risorse da presentare)
 * con l'elenco degli indirizzi ip che potranno accedere  a tutte le risorse(per tutti gli altri indirizzi ip chiamanti, la pagina presentata non avrà - per le risorse con limitazioni di accesso - i link attivati).Il formato del file à descritto nel paragrafo successivo.
-*header.php* e *footer.php* dovranno essere personalizzati (vengono distribuiti con la prova fatta per la Biblioteca Nazionale Centrale di Firenze)
+*header.php*,  *footer.php* e *index.php* dovranno essere personalizzati (vengono distribuiti con la prova fatta per la Biblioteca Nazionale Centrale di Firenze)
+
+**Importante**: rinominare il file *config.live* - configurato - in *config.live.php*
 
 
 ## File tsv
 Il file tsv deve avere il formato conforme al file  distribuito *esempio_risorse.tsv*
 E' possibile indicare un file locale o un file accessibile in rete (ad esempio un *Foglio* di *Google drive* pubblicato su WEB come *tsv*. In questo ultimo caso sarà possibile aggiornare la pagina web automaticamente a partire dal *Foglio* di *Google_drive*)
  
-## Installazione 
 
 
