@@ -1,0 +1,5 @@
+#ATTENZIONE: NON CANCELLARE MAI QUESTA RIGA E NON CANCELLARE MAI  I NOMI DEI CAMPI PRECEDUTI DA #			
+#TESTO_INIZIALE (il testo inserito nel campo accanto è modificabile e compare in testa lla pagina)	Molti dei repertori elencati sono accessibili solo dalla rete interna		
+#URL	#LINK	#COMMENTO	#ACCESSO_APERTO -- con  doppio asterisco indicare solo quelli accessibili liberamente su web ** -- con  doppio  punto esclamativo quelli riservati all'interno !!
+http://www.risorsa1.com	Titolo della risorsa 1	Questa è la presentazione della risorsa 1 ad accesso riservato	!!
+http://www.risorsa2.com	Titolo della risorsa 2	Questa è la presentazione della risorsa 2 ad accesso aperto	**

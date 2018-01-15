@@ -1,15 +1,16 @@
+##parametri da completare
 <?php
-#indicare un file accessibile in rete contenente i dati
+##indicare un file (locale o accessibile in rete) in formato tsv (delimitato da tab)
 $indirizzo_file = "";
 
-//indicare rispettando la sintassi gli indirizzi ip ammessi o il range per troncamento (es. 193.206.206 sta per 193.206.206.*). Cancellare i valori che non servono.
-
+//indicare rispettando la sintassi gli indirizzi ip ammessi o il range per troncamento (es. 150.220  sta per 150.220.*.* oppure 150.22 sta per 150.22*.*.*)
 $ip_ammesso = array
 (
 1 =>"",
-2 => "",
-3 => "",
+#non ci sono limiti (da 1 a enne); se il primo elemento dell'array viene lasciato così (nullo) tutte le risorse dell'elenco saranno cliccabili
 );
+
+#funzioni
 
 function searcharray($ip_ammesso,$richiedente) 
 {
@@ -22,6 +23,26 @@ function searcharray($ip_ammesso,$richiedente)
    	}
    return null;
    
+
+
+}
+function getRealIpAddr()
+{
+  if (!empty($_SERVER['HTTP_CLIENT_IP']))
+  //check ip from share internet
+  {
+    $ip=$_SERVER['HTTP_CLIENT_IP'];
+  }
+  elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+  //to check ip is pass from proxy
+  {
+    $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+  }
+  else
+  {
+    $ip=$_SERVER['REMOTE_ADDR'];
+  }
+  return $ip;
 }
 		
 ?>
