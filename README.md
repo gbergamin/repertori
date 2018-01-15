@@ -1,4 +1,4 @@
-# Pagina web elenco di risorse in rete c _aggiornabile da un foglio excel_ 
+# Pagina web con elenco di risorse in rete  (anche _aggiornabile da un foglio excel_) 
 
 L'obiettivo è quello di presentare una pagina di risorse in rete e di poterla modificare a  partire da un foglio excel.
 
